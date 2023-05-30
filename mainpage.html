@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourist Places in India</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #2f2f2f;
+  color: aliceblue;
+  margin: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 300px 300px 300px; /*Number of columns in Grid */
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 10px;
+  font-size: 22px;
+}
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+  
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns*/
+.column {
+  flex: 25%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+/* Divides the layout into half */
+@media (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Brings all elements in a sigle column below each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+    
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Tourist Places in India</h1>
+  <p>India is a country of many different cultures and there are so many places you can visit if you are coming to India. 
+    Here are some of the famous places in India which as a Tourist, you should not miss.</p>
+</div>
+
+<!--Flex Box -->
+<!-- Image Gallery using Flexbox -->
+<div class="row"> 
+  <div class="column">
+    <img src="image1.jpeg" style="width:100%" alt="1. Hawa Mahal, Jaipur">
+    <img src="image2.jpeg" style="width:100%" alt="2. Kerela Backwaters">
+    <img src="image10.jpeg" style="width:100%" alt="3. Farm Fields of Munnar, Kerela">
+    <img src="image6.jpeg" style="width:100%" alt="4. Kullu, Himachal Pradesh">
+
+    
+
+  </div>
+  
+  <div class="column">
+    <img src="image4.jpeg" style="width:100%" alt="5. THe Golden Temple, Amritsar">
+    <img src="image7.jpeg" style="width:100%" alt="6. Belur, Karnataka">
+    <img src="image5.jpeg" style="width:100%" alt="7. Alappuzha, Kerela">
+
+  </div> 
+   
+  <div class="column">
+    <img src="image8.jpeg" style="width:100%" alt="8. Taj Mahal, Agra">
+    <img src="image9.jpeg" style="width:100%" alt="9. Lotus Temple, New Delhi">
+    <img src="image3.jpg" style="width:100%" alt="10. Manali, Himachal Pradesh">  
+  </div>
+
+  <div class="column">
+    <img src="image11.jpeg" style="width:100%" alt="11. Dzükou Valley, Manipur">
+    <img src="image12.jpeg" style="width:100%" alt="12. Varanasi, Uttar Pradesh">
+    
+  </div>  
+  
+
+</div>
+
+
+
+<!-- Grid -->
+<!-- Names of Places using Grid -->
+<h1>Names of the Shown Places</h1>
+
+<div class="grid-container">
+  <div>1. Hawa Mahal, Jaipur</div>
+  <div>2. Kerela Backwaters</div>
+  <div>3. Farm Fields of Munnar, Kerela</div>
+  <div>4. Kullu, Himachal Pradesh</div>
+  <div>5. The Golden Temple, Amritsar</div>
+  <div>6. Belur, Karnataka</div>
+  <div>7. Alappuzha, Kerela</div>
+  <div>8. Taj Mahal, Agra</div>
+  <div>9. Lotus Temple, New Delhi</div>
+  <div>10. Manali, Himachal Pradesh</div>
+  <div>11. Dzükou Valley, Manipur</div>
+  <div>12. Varanasi, Uttar Pradesh</div> 
+</div>
+<hr>
+<footer>
+    <p style="text-align: center; font-size: 18px;">This Page shows the use of Flexbox and Grid. This was the activity for Day 4 - Html Activity</p>
+    <b><p style="text-align: Right;">- Akash Bharnuke</p></b>
+</footer>
+
+
+</body>
+</html>
+
+
